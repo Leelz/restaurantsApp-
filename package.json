@@ -1,0 +1,32 @@
+{
+  "name": "lab",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha client/src/models/specs",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.16.2",
+    "mongo": "^0.1.0",
+    "mongodb": "^2.2.22",
+    "webpack": "^2.2.1"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "webpack": "^2.7.0",
+    "webpack-cli": "^2.0.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/winnie-ho/Attenboroughs_Ark.git"
+  },
+  "bugs": {
+    "url": "https://github.com/winnie-ho/Attenboroughs_Ark/issues"
+  },
+  "homepage": "https://github.com/winnie-ho/Attenboroughs_Ark#readme",
+  "description": ""
+}
