@@ -17,14 +17,33 @@ MapWrapper.prototype = {
     google.maps.event.addDomListener(marker, 'click', function() {
       var infobox = document.querySelector("#restaurant_info");
       infobox.innerHTML = "";
-      var unselectable = document.createElement("li");
+      var name = document.createElement("LI");
+      var address = document.createElement("LI");
+      var phone = document.createElement("LI");
+      var deal = document.createElement("LI");
+      var availability = document.createElement("LI");
+      var website = document.createElement("LI");
 
-      infobox.innerHTML = restaurant.name;
-      infobox.innerHTML = restaurant.address;
-      infobox.innerHTML = restaurant.phone_number;
-      infobox.innerHTML = restaurant.evening_deal;
-      infobox.innerHTML = restaurant.availability;
-      infobox.innerHTML = restaurant.website;
+      var api_name = restaurant.name;
+      var api_address = restaurant.address;
+      var api_phone = restaurant.phone_number;
+      var api_deal = restaurant.evening_deal;
+      var api_availability = restaurant.availability;
+      var api_website = restaurant.website;
+
+      name.innerHTML = api_name;
+      address.innerHTML = api_address
+      phone.innerText = api_phone;
+      deal.innerText = api_deal;
+      availability.innerText = api_availability;
+      website.innerText = api_website;
+
+      infobox.appendChild(name)
+      infobox.appendChild(address)
+      infobox.appendChild(phone)
+      infobox.appendChild(deal)
+      infobox.appendChild(availability)
+      infobox.appendChild(website)
     });
     console.log("marker added");
     return marker;
