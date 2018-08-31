@@ -23,4 +23,4 @@
 	contact: "info@amaronerestaurant.co.uk",
 	website: "www.amaronerestaurant.co.uk"
 }
-]);
+]
